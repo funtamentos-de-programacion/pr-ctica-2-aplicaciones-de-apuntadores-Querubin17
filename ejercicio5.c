@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-
+//prototipos de funciones (no dice ni que hace, ni como lo hace)
 void pasarValor(int);
 void pasarReferencia(int *);
 
@@ -14,7 +14,7 @@ int main(){
   pasarValor(*ap);
   printf("Pasar referencia: %d\n", *ap);
   pasarReferencia(ap);
-  printf("Valor final: %d\n", *ap);
+  printf("Valor final: %d\n", *ap); //se modifica el contenido porque se pasa con referencia y este es un apuntador
   return 0;
 }
 
